@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  background-color: #efe8f8;
+}
+
+.form-container, .course-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  width: 80%; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.left-column {
+  margin-right: 100px; 
+  padding: 20px 60px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.right-column {
+  flex: 1; 
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+
+.label {
+  color: #7a39ce;
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+input {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px; 
+  color: #7a39ce;
+  margin-bottom: 10px; 
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.qpi {
+  display: flex;
+  align-items: center; 
+}
+
+.qpi-label {
+  margin-left: 75vh;
+  margin-right: 75px; 
+}
+
+.qpi-value {
+  font-weight: bold; 
+}
+
+.radio-group {
+  margin-top: 30px;
+}
+
+label.custom-radio-button input[type="radio"] {
+    opacity:0;
+}
+ 
+label.custom-radio-button input[type="radio"] ~ .helping-el {
+    margin-top: -10px;
+    background-color: #FFFFFF;
+    border: 2px solid #7a39ce;  
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 10px;
+    position: relative;
+    top: 6px;
+}
+ 
+label.custom-radio-button input[type="radio"]:checked ~ .helping-el {
+    border: 2px solid #7a39ce; 
+}
+ 
+label.custom-radio-button input[type="radio"]:checked ~ .helping-el:after {
+    background-color: #7a39ce; 
+    border-radius: 50%;
+    content: " ";
+    font-size: 35px;
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+     
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #7a39ce;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#title {
+  text-align: center;
+}
+
+
+#courselist {
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#courselist td, #courselist th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#courselist tr:nth-child(even){background-color: #efeaf7;}
+
+#courselist tr:hover {background-color: #e4e4e4;}
+
+#courselist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #7a39ce;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
